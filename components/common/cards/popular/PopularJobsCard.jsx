@@ -21,13 +21,19 @@ const PopularJobcard = ({ item, selectedJob, handleCardpress }) => {
           style={styles.logoImage}
         />
       </TouchableOpacity>
+
       <Text style={styles.companyName} numberOfLines={1}>
         {item.employer_name}
       </Text>
-      <Text style={styles.companyName} numberOfLines={1}>
-        {item.job_title}
-      </Text>
-      <Text style={styles.location}>{item.job_country}</Text>
+
+      <View style={styles.infoContainer}>
+        <Text style={styles.companyName} numberOfLines={1}>
+          {item.job_title}
+        </Text>
+        <View style={styles.infoWrapper}>
+          <Text style={styles.location}>{item.job_country}</Text>
+        </View>
+      </View>
     </TouchableOpacity>
   );
 };
