@@ -28,6 +28,7 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
             activeTab={activeTab}
             onHandleSearchType={() => setActiveTab(item)}
           />
+          
         )}
         contentContainerStyle={{ columnGap: SIZES.small / 2 }}
         keyExtractor={(item) => item}
