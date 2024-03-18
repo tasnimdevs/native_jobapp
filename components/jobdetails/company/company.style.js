@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     height: 80,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FFF",
+    backgroundColor: SIZES.white,
     borderRadius: SIZES.large,
   },
   logoImage: {
